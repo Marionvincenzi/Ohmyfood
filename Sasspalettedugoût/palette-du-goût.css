@@ -27,6 +27,7 @@
     position: absolute;
     left: 25px;
     top: 25px;
+    color: #353535;
   }
   .restaurant-menu img {
     width: 100%;
@@ -107,7 +108,7 @@
   .submenus p {
     font-size: 15px;
     font-weight: 300;
-    margin: 12px;
+    margin: 0 0 0 15px;
   }
   .submenus span {
     display: flex;
@@ -125,13 +126,14 @@
     margin: 20px;
     position: relative;
     cursor: pointer;
+    padding-bottom: 12px;
   }
   .lists .list-content {
     width: 100%;
   }
   .lists h4 {
     font-size: 18px;
-    margin: 12px;
+    margin: 12px 0 5px 15px;
     padding: 8px 0;
   }
   .lists span {
@@ -176,6 +178,14 @@
   .lists:hover .list-content span {
     transform: translateX(-70px);
     transition: all 1s;
+  }
+  @keyframes appear {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
   }
   .btn-menu {
     background: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);

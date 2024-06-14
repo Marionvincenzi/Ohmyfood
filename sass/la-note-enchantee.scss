@@ -148,6 +148,7 @@
         margin: 20px;
         position: relative;
         cursor: pointer;
+        padding-bottom: 12px;
 
         & .list-content {
             width: 100%;
@@ -155,7 +156,7 @@
 
         & h4 {
             font-size: 18px;
-            margin: 12px;
+            margin: 12px 0 5px 15px;
             padding: 8px 0;
         }
 

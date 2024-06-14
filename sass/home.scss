@@ -47,7 +47,6 @@ body {
 
 /*Small devices ( phones) */
 
-@media (max-width: 768px) {
 .reservation {
     font-size: 24px;
     
@@ -209,12 +208,13 @@ header {
         cursor: pointer;
         opacity: 0;
         transition: all 200ms ease-in-out;
-        }
 
-    &:hover .fa-solid {
+    &:hover {
         opacity: 1;
         transform: scale(1.1);
     }    
+        }
+
     
     & .fa-regular {
         font-size: 30px;
@@ -251,7 +251,7 @@ header {
         & h4 {
             font-weight: normal;
             margin: 12px;
-            padding-bottom: 15px;
+            padding-bottom: 12px;
         }
 }
 
@@ -309,6 +309,5 @@ header {
             padding: 12px;
         }
     }
-}
 
 /*DESKTOP*/
