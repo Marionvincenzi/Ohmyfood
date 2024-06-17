@@ -273,4 +273,65 @@ header {
   padding: 12px;
 }
 
-/*DESKTOP*//*# sourceMappingURL=home.css.map */
+/*DESKTOP*/
+@media (min-width: 1024px) {
+  .home h1 {
+    font-size: 40px;
+  }
+  .functioning h2 {
+    padding: 0;
+    margin: 50px 0 0 180px;
+  }
+  .functioning div {
+    display: flex;
+    flex-direction: row;
+    margin: 25px 0 0 120px;
+  }
+  .card-restaurant {
+    margin-top: 50px;
+  }
+  .card-restaurant h2 {
+    font-size: 24px;
+    margin: 30px 0 28px 180px;
+  }
+  .card-restaurant .card-content {
+    position: relative;
+  }
+  .card-restaurant .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 28px 100px 0 160px;
+  }
+  .card-restaurant article {
+    width: 498px;
+    height: 316px;
+  }
+  .card-restaurant img {
+    width: 498px;
+    height: 231px;
+  }
+  .card-restaurant .fa-solid {
+    position: absolute;
+  }
+  .card-restaurant:hover .fa-solid {
+    opacity: 1;
+  }
+  .card-restaurant .new {
+    position: relative;
+  }
+  .footer div {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .footer h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0 16px;
+  }
+  .footer ul {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+}/*# sourceMappingURL=home.css.map */

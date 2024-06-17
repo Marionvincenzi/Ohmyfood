@@ -311,3 +311,87 @@ header {
     }
 
 /*DESKTOP*/
+
+@media (min-width: 1024px) {
+    .home {
+        & h1 {
+            font-size: 40px;
+        }
+    }
+
+    .functioning {
+        & h2 {
+            padding: 0;
+            margin: 50px 0 0 180px;
+        }
+
+        & div {
+            display: flex;
+            flex-direction: row;
+            margin: 25px 0 0 120px;
+        }
+    }
+
+    .card-restaurant {
+        margin-top: 50px;
+        & h2 {
+            font-size: 24px;
+            margin: 30px 0 28px 180px;
+        }
+
+        .card-content {
+            position: relative;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            margin: 28px 100px 0 160px;
+        }
+
+        & article {
+            width: 498px;
+            height: 316px;
+        }
+
+        & img {
+            width: 498px;
+            height: 231px;
+        }
+
+        .fa-solid {
+            position: absolute;
+        }
+
+        &:hover .fa-solid{
+            opacity: 1;
+        }
+
+        .new {
+            position: relative;
+        }
+
+    }
+
+    .footer {
+        & div {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        & h4 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 0 0 16px;
+        }
+
+        & ul {
+            display: flex;
+            flex-direction: row;
+            gap: 40px;
+        }
+
+    }
+
+}
