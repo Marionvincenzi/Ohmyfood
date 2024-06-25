@@ -3,9 +3,9 @@
 * {
     margin: 0;
     font-family: 'Roboto';
+    list-style: none;
 }
 
-@media (max-width:768px) {
     header {
         list-style: none;
     }
@@ -13,6 +13,7 @@
     main {
         background-color: #f6f6f6;
     }
+
 
     .container {
         position: relative;
@@ -31,6 +32,7 @@
             position: absolute;
             left: 25px;
             top: 25px;
+            color: #353535;
         }
     }
 
@@ -50,7 +52,7 @@
         background-color: #f6f6f6;
         position: relative;
         margin-top: -50px;
-        width: 425px;
+        width: 375px;
         height: 80px;
 
         & h2 {
@@ -142,7 +144,7 @@
     }
 
     .lists {
-        width: 25rem;
+        width: 349px;
         height: 70px;
         box-shadow:4px 4px 16px rgba(0, 0, 0, 0.1);
         border-radius: 15px;
@@ -150,6 +152,13 @@
         position: relative;
         cursor: pointer;
         padding-bottom: 12px;
+        animation: appear 1s;
+        @for $i from 2 to 4 {
+            &:nth-child(#{$i}) {
+                animation-delay: 100ms * $i;
+                animation-fill-mode: both;
+            }
+        }
 
         & .list-content {
             width: 100%;
@@ -172,7 +181,7 @@
 
         & .wrap-icon {
             width: 56px;
-            height: 70px;
+            height: 82px;
             background-color: #99e2d0;
             color: #f6f6f6;
             border-radius: 0 16px 16px 0;
@@ -181,7 +190,7 @@
             align-items: center;
             position: absolute;
             top: 0;
-            left: 36.5rem;
+            left: 33.5rem;
             opacity: 0;
             transform: translateX(-9rem); 
         }
@@ -209,6 +218,18 @@
         &:hover .list-content span {
             transform: translateX(-70px);
             transition: all 1s;
+        }
+    }
+
+    @keyframes appear { 
+        0% { 
+            transform: translateY(50%);
+            opacity: 0;
+        }
+
+        100% { 
+            transform: translateX(0);
+            opacity: 1;
         }
     }
 
@@ -272,4 +293,111 @@
     }
 }
 
+@media (min-width: 1024px) {
+    header {
+        list-style: none;
+
+        & i {
+            color: #353535;
+        }
+    }
+
+    .restaurant-menu {
+        & img {
+            height: 423px;
+            object-fit: cover;
+        }
+    }
+        .menu {
+            width: 1055px;
+            margin-left: 190px;
+            margin-right: 190px;
+
+            & h2{
+                text-align: center;
+                padding-top: 50px;
+            }
+        }
+
+        .submenus{
+            display: flex;
+            justify-content: center;
+            width: 1055px;
+            margin-left: 190px;
+            margin-right: 190px;
+            background-color: #f6f6f6;
+
+            & h3 {
+                margin: 40px 25px 12px;
+            }
+        }
+
+        .lists {
+            width: 634px;
+            height: 69px;
+            background-color: white;
+
+            & .wrap-icon {
+                width: 56px;
+                height: 81px;
+                background-color: #99e2d0;
+                color: #f6f6f6;
+                border-radius: 0 16px 16px 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                top: 0;
+                left: 51.5rem;
+                opacity: 0;
+                transform: translateX(-9rem);
+            }
+
+            &:hover .wrap-icon {
+                opacity: 1;
+                transform: translateX(-15rem);
+                transition: all 1s ease-out;
+            }
+    
+            &:hover i {
+                transform: rotate(360deg);
+                transition: all 1s;
+            }
+    
+            &:hover .list-content span {
+                transform: translateX(-70px);
+                transition: all 1s;
+            }
+        }
+
+    .icone-menu {
+        position: absolute;
+        right: 330px;
+        bottom: 22px;
+    }
+
+    .footer {
+        & div {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        & h4 {
+            display: flex;
+            align-items: center;
+            padding: 57px 25px 30px 16px;
+        }
+
+        & ul {
+            display: flex;
+            flex-direction: row;
+            gap: 40px;
+            padding: 52px 16px 34px;
+        }
+
+    }
+
+    .btn-menu {
+        padding: 16px 50px;
+    }
 }
