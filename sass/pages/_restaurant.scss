@@ -1,22 +1,19 @@
+/* Phones */
+
 * {
     margin: 0;
     font-family: 'Roboto';
     list-style: none;
 }
 
-/* Phones */
 
     header {
         list-style: none;
     }
 
-    main {
-        background-color: #f6f6f6;
-    }
-
-
     .container {
         position: relative;
+        
         & h1 {
             font-family: 'Shrikhand';
             text-align: center;
@@ -39,7 +36,6 @@
         & img {
             width: 100%;
             height: 275px;
-            object-fit: cover;
         }
     }
 
@@ -57,7 +53,7 @@
 
         & h2 {
             font-family: 'Shrikhand';
-            padding: 32px 16px;
+            padding: 17px;
             font-size: 28px;
         }
 
@@ -97,7 +93,7 @@
         justify-content: flex-end;
         font-size: 24px;
         position: relative;
-        bottom: 60px;
+        bottom: 50px;
         right: 41px;
     }
 
@@ -106,8 +102,8 @@
             font-weight: 300;
             text-transform: uppercase;
             position: relative;
-            margin: 20px 0 22px 13px;
-            margin-top: 40px;
+            margin: 20px 0 22px 12px ;
+            margin-top: 38px;
         }
 
         & h3::after {
@@ -123,13 +119,13 @@
 
         & h4 {
             font-size: 18px;
-            margin: 0 0 4px;
+            margin: 12px ;
         }
 
         & p {
             font-size: 15px;
             font-weight: 300;
-            margin: 12px;
+            margin: 0 0 0 15px;
         }
 
         & span {
@@ -137,20 +133,20 @@
             justify-content: flex-end;
             font-weight: 700;
         }
-         & i {
+
+        & i {
             color: #99e2d0;
-         }
+        }
     }
 
     .lists {
         width: 349px;
         height: 70px;
-        box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.1);
+        box-shadow:4px 4px 16px rgba(0, 0, 0, 0.1);
         border-radius: 15px;
         margin: 20px;
         position: relative;
         cursor: pointer;
-        background-color: #FFFFFF;
         padding-bottom: 12px;
         animation: appear 1s;
         @for $i from 2 to 4 {
@@ -192,7 +188,7 @@
             top: 0;
             left: 33.5rem;
             opacity: 0;
-            transform: translateX(-9rem);
+            transform: translateX(-9rem); 
         }
 
         & i {
@@ -239,42 +235,40 @@
         text-decoration: none;
         border-radius: 30px;
         margin: 40px;
-        padding: 12px 30px;
+        padding: 12px 24px;
         cursor: pointer;
-    }
+        }
 
-    .button {
-        display: flex;
-        justify-content: center;
-    }
+.button {
+    display: flex;
+    justify-content: center;
+}
 
-    
 .footer {
     background-color: #353535;
     padding: 5px;
 
     & h4 {
-        color: #FFFFFF;
-        font-family: Shrikhand;
+        color: #ffffff;
+        font-family: 'Shrikhand';
         font-size: 18px;
         font-weight: normal;
         margin: 0 0 12px;
     }
 
-    & i { 
-        color: #FFFFFF;
+    & i {
+        color: #ffffff;
         margin-right: 8px;
-        margin-right: 11px;
     }
 
     & strong {
-        color: #FFFFFF;
+        color: #ffffff;
         font-size: 16px;
         font-weight: normal;
     }
 
     & a {
-        color: #FFFFFF;
+        color: #ffffff;
         text-decoration: none;
     }
 
@@ -294,9 +288,10 @@
         padding: 12px;
     }
 }
- /*DESKTOP*/
 
- @media (min-width: 1024px) {
+/*DESKTOP*/
+
+@media (min-width: 1024px) {
     header {
         list-style: none;
 
@@ -311,64 +306,73 @@
             object-fit: cover;
         }
     }
+        .menu {
+            width: 1055px;
+            margin-left: 190px;
+            margin-right: 190px;
 
-    .menu {
-        width: 1055px;
-        margin-left: 190px;
-        margin-right: 190px;
-
-        & h2 {
-            text-align: center;
-            padding-top: 50px;
+            & h2{
+                text-align: center;
+                padding-top: 50px;
+            }
         }
-    }
 
-    .submenus {
-        background-color: #f6f6f6;
-        display: flex;
-        justify-content: center;
-        width: 1055px;
-        margin-left: 190px;
-        margin-right: 190px;
-    }
-
-    .lists {
-        width: 634px;
-        height: 69px;
-        background-color: white;
-
-        & .wrap-icon {
-            width: 56px;
-            height: 81px;
-            background-color: #99e2d0;
-            color: #f6f6f6;
-            border-radius: 0 16px 16px 0;
+        .submenus{
             display: flex;
             justify-content: center;
-            align-items: center;
-            position: absolute;
-            top: 0;
-            left: 51.5rem;
-            opacity: 0;
-            transform: translateX(-9rem);
+            width: 1055px;
+            margin-left: 190px;
+            margin-right: 190px;
+            background-color: #f6f6f6;
+
+            & h3 {
+                margin: 40px 25px 12px;
+            }
         }
 
-        &:hover .wrap-icon {
-            opacity: 1;
-            transform: translateX(-15rem);
-            transition: all 1s ease-out;
-        }
+        .lists {
+            width: 634px;
+            height: 69px;
+            background-color: white;
 
-        &:hover i {
-            transform: rotate(360deg);
-            transition: all 1s;
-        }
+            & .wrap-icon {
+                width: 56px;
+                height: 81px;
+                background-color: #99e2d0;
+                color: #f6f6f6;
+                border-radius: 0 16px 16px 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                top: 0;
+                left: 51.5rem;
+                opacity: 0;
+                transform: translateX(-9rem);
+            }
 
-        &:hover .list-content span {
-            transform: translateX(-70px);
-            transition: all 1s;
+            &:hover .wrap-icon {
+                opacity: 1;
+                transform: translateX(-15rem);
+                transition: all 1s ease-out;
+            }
+    
+            &:hover i {
+                transform: rotate(360deg);
+                transition: all 1s;
+            }
+    
+            &:hover .list-content span {
+                transform: translateX(-70px);
+                transition: all 1s;
+            }
+
+            .icone-menu {
+                position: absolute;
+                right: 330px;
+                bottom: 40px;
+            } 
         }
-    }
 
     .icone-menu {
         position: absolute;
@@ -400,5 +404,4 @@
     .btn-menu {
         padding: 16px 50px;
     }
-
- }
+}
