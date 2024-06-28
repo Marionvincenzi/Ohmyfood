@@ -26,7 +26,7 @@
             font-weight: 900;
             font-size: 18px;
             position: absolute;
-            left: 25px;
+            left: -50px;
             top: 25px;
             color: #353535;
         }
@@ -48,7 +48,6 @@
         background-color: #f6f6f6;
         position: relative;
         margin-top: -50px;
-        width: 375px;
         height: 80px;
 
         & h2 {
@@ -104,6 +103,7 @@
             position: relative;
             margin: 20px 0 22px 12px ;
             margin-top: 38px;
+            background-color: #f6f6f6;
         }
 
         & h3::after {
@@ -126,6 +126,10 @@
             font-size: 15px;
             font-weight: 300;
             margin: 0 0 0 15px;
+            width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
 
         & span {
@@ -140,16 +144,16 @@
     }
 
     .lists {
-        width: 349px;
         height: 70px;
         box-shadow:4px 4px 16px rgba(0, 0, 0, 0.1);
+        background-color: #ffffff;
         border-radius: 15px;
         margin: 20px;
         position: relative;
         cursor: pointer;
         padding-bottom: 12px;
         animation: appear 1s;
-        @for $i from 2 to 4 {
+        @for $i from 1 to 4 {
             &:nth-child(#{$i}) {
                 animation-delay: 100ms * $i;
                 animation-fill-mode: both;
@@ -308,8 +312,8 @@
     }
         .menu {
             width: 1055px;
-            margin-left: 190px;
-            margin-right: 190px;
+            margin-left: auto;
+            margin-right: auto;
 
             & h2{
                 text-align: center;
@@ -321,8 +325,8 @@
             display: flex;
             justify-content: center;
             width: 1055px;
-            margin-left: 190px;
-            margin-right: 190px;
+            margin-left: auto;
+            margin-right: auto;
             background-color: #f6f6f6;
 
             & h3 {

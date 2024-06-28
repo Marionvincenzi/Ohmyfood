@@ -7,6 +7,10 @@ body, html {
   list-style: none;
 }
 
+main {
+  background-color: #f6f6f6;
+}
+
 * {
   font-family: "Roboto";
 }
@@ -304,12 +308,13 @@ header {
   }
   .functioning h2 {
     padding: 0;
-    margin: 50px 0 0 180px;
   }
   .functioning div {
     display: flex;
     flex-direction: row;
-    margin: 25px 0 0 120px;
+    max-width: 1055px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .card-restaurant {
     margin-top: 50px;
@@ -369,6 +374,9 @@ header {
     flex-direction: row-reverse;
     padding: 57px 25px 30px;
   }
+  .footer .bold {
+    font-weight: 700;
+  }
   .footer h4 {
     display: flex;
     justify-content: center;
@@ -406,7 +414,7 @@ header {
   font-weight: 900;
   font-size: 18px;
   position: absolute;
-  left: 25px;
+  left: -50px;
   top: 25px;
   color: #353535;
 }
@@ -425,7 +433,6 @@ header {
   background-color: #f6f6f6;
   position: relative;
   margin-top: -50px;
-  width: 375px;
   height: 80px;
 }
 .menu h2 {
@@ -476,6 +483,7 @@ header {
   position: relative;
   margin: 20px 0 22px 12px;
   margin-top: 38px;
+  background-color: #f6f6f6;
 }
 .submenus h3::after {
   content: "";
@@ -495,6 +503,10 @@ header {
   font-size: 15px;
   font-weight: 300;
   margin: 0 0 0 15px;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .submenus span {
   display: flex;
@@ -506,15 +518,19 @@ header {
 }
 
 .lists {
-  width: 349px;
   height: 70px;
   box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
   border-radius: 15px;
   margin: 20px;
   position: relative;
   cursor: pointer;
   padding-bottom: 12px;
   animation: appear 1s;
+}
+.lists:nth-child(1) {
+  animation-delay: 100ms;
+  animation-fill-mode: both;
 }
 .lists:nth-child(2) {
   animation-delay: 200ms;
@@ -654,8 +670,8 @@ header {
   }
   .menu {
     width: 1055px;
-    margin-left: 190px;
-    margin-right: 190px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .menu h2 {
     text-align: center;
@@ -665,8 +681,8 @@ header {
     display: flex;
     justify-content: center;
     width: 1055px;
-    margin-left: 190px;
-    margin-right: 190px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: #f6f6f6;
   }
   .submenus h3 {

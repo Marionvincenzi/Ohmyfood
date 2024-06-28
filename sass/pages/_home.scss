@@ -342,13 +342,14 @@ header {
     .functioning {
         & h2 {
             padding: 0;
-            margin: 50px 0 0 180px;
-        }
+    }
 
         & div {
             display: flex;
             flex-direction: row;
-            margin: 25px 0 0 120px;
+            max-width: 1055px;
+            margin-left: auto;
+            margin-right: auto;
         }
     }
 
@@ -422,6 +423,10 @@ header {
             display: flex;
             flex-direction: row-reverse;
             padding: 57px 25px 30px;
+        }
+
+        .bold {
+            font-weight: 700;
         }
 
         & h4 {
