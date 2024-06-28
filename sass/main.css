@@ -678,6 +678,10 @@ header {
   header i {
     color: #353535;
   }
+  .container i {
+    position: absolute;
+    left: -38.75rem;
+  }
   .restaurant-menu img {
     height: 423px;
     -o-object-fit: cover;

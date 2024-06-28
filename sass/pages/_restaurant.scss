@@ -304,6 +304,13 @@
         }
     }
 
+    .container {
+        & i {
+            position: absolute;
+            left: -38.75rem;
+        }
+    }
+
     .restaurant-menu {
         & img {
             height: 423px;
