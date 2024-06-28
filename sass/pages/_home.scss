@@ -111,9 +111,18 @@ header {
     & a {
         padding: 13px 19px;
         border-radius: 25px;
+        background-color: #686868;
         background: linear-gradient(352deg, #9356DC, #FF79DA);
         text-decoration: none;
+        cursor: pointer;
         color: #FFFFFF;
+        box-shadow: 0 4px 8px 5px rgba(0,0,0,.07);
+        transition-duration: .25s;
+    }
+
+    &:a:hover {
+        background-color: #FFFFFF;
+        box-shadow: 0 4px 8px 5px rgba(0,0,0,.07);
     }
 }
 
@@ -139,6 +148,7 @@ header {
         box-shadow: 2px 2px 7px #d3d3d3;
         border: none;
         position: relative;
+        cursor: pointer;
     }
     
     & i {
@@ -342,6 +352,9 @@ header {
     .functioning {
         & h2 {
             padding: 0;
+            max-width: 1055px;
+            margin-left:auto;
+            margin-right: auto;
     }
 
         & div {
@@ -355,9 +368,13 @@ header {
 
     .card-restaurant {
         margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
         & h2 {
             font-size: 24px;
-            margin: 30px 0 28px 180px;
+            max-width: 1055px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .card-content {
@@ -367,9 +384,11 @@ header {
         .cards {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            margin: 28px 0 0 160px;
             row-gap: 20px;
             column-gap: 20px;
+            max-width: 1055px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
 
@@ -434,6 +453,7 @@ header {
             justify-content: center;
             align-items: center;
             margin: 0 0 0 16px;
+            margin-left: 40px;
         }
 
         & ul {
