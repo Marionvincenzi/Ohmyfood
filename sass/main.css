@@ -518,10 +518,9 @@ header {
   font-size: 15px;
   font-weight: 300;
   margin: 0 0 0 15px;
-  width: 100%;
   white-space: nowrap;
-  overflow: hidden;
   text-overflow: ellipsis;
+  overflow: hidden;
 }
 .submenus span {
   display: flex;
@@ -566,10 +565,10 @@ header {
 .lists span {
   font-size: 18px;
   margin: 15px 13px;
-  position: absolute;
-  left: 20rem;
-  right: 15px;
-  top: 26px;
+  margin-top: -18px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 .lists .wrap-icon {
   width: 56px;
@@ -582,7 +581,7 @@ header {
   align-items: center;
   position: absolute;
   top: 0;
-  left: 33.5rem;
+  left: 36.5rem;
   opacity: 0;
   transform: translateX(-9rem);
 }
