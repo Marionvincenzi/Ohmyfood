@@ -103,14 +103,12 @@
             position: relative;
             margin: 20px 0 22px 12px ;
             margin-top: 38px;
-            background-color: #f6f6f6;
         }
 
         & h3::after {
             content: "";
             width: 40px;
             height: 3px;
-            background-color: #99e2d0;
             position: absolute;
             left: 0;
             bottom: 0;
@@ -124,9 +122,6 @@
         & p {
             font-size: 15px;
             font-weight: 300;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            overflow: hidden
         }
 
         & i {
@@ -139,7 +134,7 @@
         background-color: #ffffff;
         border-radius: 15px;
         margin: 20px;
-        padding: 15px 12px 0 13px;
+        padding: 20px;
         position: relative;
         cursor: pointer;
         overflow: hidden;
@@ -158,17 +153,19 @@
 
         & h4 {
             font-size: 18px;
+            margin-bottom: 5px;
         }
 
         & span {
             font-size: 18px;
             margin-left: auto;
             margin-top: auto;
+            font-weight: 700;
         }
 
-        & .wrap-icon {
+        & .confirmation {
             width: 56px;
-            height: 70px;
+            min-height: 100%;
             background-color: #99e2d0;
             color: #f6f6f6;
             border-radius: 0 16px 16px 0;
@@ -176,6 +173,7 @@
             justify-content: center;
             align-items: center;    
             transition: all 1s ease-out;
+            margin: -20px -76px -20px 20px;
         }
 
         & i {
@@ -187,9 +185,8 @@
             margin: -20px 0 0 20px;
         }
 
-        &:hover .wrap-icon {
-            transform: translateX(-56px);
-        
+        &:hover .confirmation {
+            margin: -20px -20px -20px 20px;        
         }
 
         &:hover i {
@@ -320,12 +317,11 @@
 
         .lists {
             width: 634px;
-            height: 69px;
             background-color: white;
 
-            & .wrap-icon {
+            & .confirmation {
                 width: 56px;
-                height: 81px;
+                min-height: 100%;
                 background-color: #99e2d0;
                 color: #f6f6f6;
                 border-radius: 0 16px 16px 0;
@@ -339,7 +335,7 @@
                 transform: translateX(-9rem);
             }
 
-            &:hover .wrap-icon {
+            &:hover .confirmation {
                 opacity: 1;
                 transform: translateX(-15rem);
                 transition: all 1s ease-out;

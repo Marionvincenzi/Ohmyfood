@@ -117,7 +117,8 @@ header {
   box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.07);
   transition-duration: 0.25s;
 }
-.home:a:hover {
+.home a:hover {
+  opacity: 0.8;
   background-color: #FFFFFF;
   box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.07);
 }
@@ -498,13 +499,11 @@ header {
   position: relative;
   margin: 20px 0 22px 12px;
   margin-top: 38px;
-  background-color: #f6f6f6;
 }
 .submenus h3::after {
   content: "";
   width: 40px;
   height: 3px;
-  background-color: #99e2d0;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -516,9 +515,6 @@ header {
 .submenus p {
   font-size: 15px;
   font-weight: 300;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
 }
 .submenus i {
   color: #99e2d0;
@@ -529,7 +525,7 @@ header {
   background-color: #ffffff;
   border-radius: 15px;
   margin: 20px;
-  padding: 15px 12px 0 13px;
+  padding: 20px;
   position: relative;
   cursor: pointer;
   overflow: hidden;
@@ -553,15 +549,17 @@ header {
 }
 .lists h4 {
   font-size: 18px;
+  margin-bottom: 5px;
 }
 .lists span {
   font-size: 18px;
   margin-left: auto;
   margin-top: auto;
+  font-weight: 700;
 }
-.lists .wrap-icon {
+.lists .confirmation {
   width: 56px;
-  height: 70px;
+  min-height: 100%;
   background-color: #99e2d0;
   color: #f6f6f6;
   border-radius: 0 16px 16px 0;
@@ -569,6 +567,7 @@ header {
   justify-content: center;
   align-items: center;
   transition: all 1s ease-out;
+  margin: -20px -76px -20px 20px;
 }
 .lists i {
   color: #f6f6f6;
@@ -577,8 +576,8 @@ header {
 .lists .p {
   margin: -20px 0 0 20px;
 }
-.lists:hover .wrap-icon {
-  transform: translateX(-56px);
+.lists:hover .confirmation {
+  margin: -20px -20px -20px 20px;
 }
 .lists:hover i {
   transform: rotate(360deg);
@@ -687,12 +686,11 @@ header {
   }
   .lists {
     width: 634px;
-    height: 69px;
     background-color: white;
   }
-  .lists .wrap-icon {
+  .lists .confirmation {
     width: 56px;
-    height: 81px;
+    min-height: 100%;
     background-color: #99e2d0;
     color: #f6f6f6;
     border-radius: 0 16px 16px 0;
@@ -705,7 +703,7 @@ header {
     opacity: 0;
     transform: translateX(-9rem);
   }
-  .lists:hover .wrap-icon {
+  .lists:hover .confirmation {
     opacity: 1;
     transform: translateX(-15rem);
     transition: all 1s ease-out;
