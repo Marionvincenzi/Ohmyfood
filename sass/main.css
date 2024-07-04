@@ -412,6 +412,10 @@ header {
   list-style: none;
 }
 
+main {
+  background-color: #f6f6f6;
+}
+
 header {
   list-style: none;
 }
@@ -515,6 +519,8 @@ header {
 .submenus p {
   font-size: 15px;
   font-weight: 300;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .submenus i {
   color: #99e2d0;
@@ -546,10 +552,17 @@ header {
 .lists .list-content {
   width: 100%;
   display: flex;
+  white-space: nowrap;
+}
+.lists .plats {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .lists h4 {
   font-size: 18px;
   margin-bottom: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .lists span {
   font-size: 18px;
@@ -597,11 +610,17 @@ header {
 .btn-menu {
   background: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
   color: #f6f6f6;
+  background-color: #686868;
   text-decoration: none;
   border-radius: 30px;
   margin: 40px;
   padding: 12px 24px;
   cursor: pointer;
+}
+.btn-menu:hover {
+  opacity: 0.8;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.07);
 }
 
 .button {
@@ -649,6 +668,9 @@ header {
 
 /*DESKTOP*/
 @media (min-width: 1024px) {
+  main {
+    background-color: #ffffff;
+  }
   header {
     list-style: none;
   }
@@ -657,7 +679,7 @@ header {
   }
   .container i {
     position: absolute;
-    left: -38.75rem;
+    left: -26rem;
   }
   .restaurant-menu img {
     height: 423px;
@@ -697,15 +719,10 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 0;
-    left: 51.5rem;
     opacity: 0;
-    transform: translateX(-9rem);
   }
   .lists:hover .confirmation {
     opacity: 1;
-    transform: translateX(-15rem);
     transition: all 1s ease-out;
   }
   .lists:hover i {
