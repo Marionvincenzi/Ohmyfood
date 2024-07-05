@@ -423,8 +423,7 @@ header {
 .container {
   position: relative;
 }
-.container h1 {
-  font-family: "Shrikhand";
+.container img {
   text-align: center;
   font-size: 30px;
   margin: 0;
@@ -442,6 +441,8 @@ header {
 .restaurant-menu img {
   width: 100%;
   height: 275px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .menu-container {
@@ -467,8 +468,8 @@ header {
   -webkit-background-clip: text;
   font-size: 30px;
   position: absolute;
-  right: -5px;
-  top: -13px;
+  left: 0;
+  top: 0;
   padding: 12px;
   cursor: pointer;
   opacity: 0;
@@ -480,21 +481,20 @@ header {
 }
 .menu .fa-regular {
   font-size: 30px;
-  position: absolute;
-  right: -5px;
-  top: -13px;
   padding: 12px;
   transform: scale(1);
   cursor: pointer;
 }
 
 .icone-menu {
-  display: flex;
-  justify-content: flex-end;
   font-size: 24px;
   position: relative;
-  bottom: 50px;
-  right: 41px;
+}
+
+.menu-title {
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }
 
 .submenus h3 {
@@ -677,10 +677,6 @@ header {
   header i {
     color: #353535;
   }
-  .container i {
-    position: absolute;
-    left: -26rem;
-  }
   .restaurant-menu img {
     height: 423px;
     -o-object-fit: cover;
@@ -694,6 +690,10 @@ header {
   .menu h2 {
     text-align: center;
     padding-top: 50px;
+  }
+  .menu-title {
+    display: flex;
+    justify-content: center;
   }
   .submenus {
     display: flex;
@@ -737,7 +737,7 @@ header {
   .icone-menu {
     position: absolute;
     right: 330px;
-    bottom: 22px;
+    bottom: -16px;
   }
   .footer div {
     display: flex;
