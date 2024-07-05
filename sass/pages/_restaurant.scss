@@ -10,14 +10,21 @@ main {
     background-color: #f6f6f6;
 }
 
+.header-title {
+    display: flex;
+    align-items: center;
+
+    & a {
+        text-decoration: none;
+    }
+}
+
 
     header {
         list-style: none;
     }
 
-    .container {
-        position: relative;
-        
+    .container {        
         & img {
             text-align: center;
             font-size: 30px;
@@ -28,9 +35,6 @@ main {
         & i {
             font-weight: 900;
             font-size: 18px;
-            position: absolute;
-            left: -50px;
-            top: 25px;
             color: #353535;
         }
     }

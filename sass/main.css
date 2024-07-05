@@ -123,6 +123,9 @@ header {
   box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.07);
 }
 
+.functioning {
+  background-color: #FFFFFF;
+}
 .functioning h2 {
   padding: 50px 0 10px 20px;
 }
@@ -416,13 +419,18 @@ main {
   background-color: #f6f6f6;
 }
 
+.header-title {
+  display: flex;
+  align-items: center;
+}
+.header-title a {
+  text-decoration: none;
+}
+
 header {
   list-style: none;
 }
 
-.container {
-  position: relative;
-}
 .container img {
   text-align: center;
   font-size: 30px;
@@ -432,9 +440,6 @@ header {
 .container i {
   font-weight: 900;
   font-size: 18px;
-  position: absolute;
-  left: -50px;
-  top: 25px;
   color: #353535;
 }
 
