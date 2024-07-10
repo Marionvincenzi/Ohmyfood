@@ -13,9 +13,18 @@ main {
 .header-title {
     display: flex;
     align-items: center;
+    padding: 0;
 
     & a {
         text-decoration: none;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+
+    .main-title {
+        margin: auto;
     }
 }
 
@@ -24,7 +33,8 @@ main {
         list-style: none;
     }
 
-    .container {        
+    .container {     
+        width: 90%;   
         & img {
             text-align: center;
             font-size: 30px;
@@ -394,7 +404,7 @@ main {
         & ul {
             display: flex;
             flex-direction: row;
-            gap: 40px;
+            gap: 20px;
             padding: 52px 16px 34px;
         }
 
